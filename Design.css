@@ -1,0 +1,33 @@
+body{margin:0;
+overflow-y: hidden;
+}
+img{height: 100%; width: 100%;}
+.Login section:nth-child(1){
+    position: relative;
+    display: inline-block;
+    margin:0;
+}
+
+input{
+    font-size: 22px;
+    background-color: lightgray;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+label{
+    text-align: center;
+}
+
+input[ type="submit"]:hover{
+    background-color:darkgray;
+
+}
+.Login section:nth-child(2){
+    margin-left: 6%;
+    color:gray;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    display: inline-block;
+    transform: translateY(-200px);
+}
