@@ -1,27 +1,39 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Login">
-        <meta name="description" contet="Apenas um site de login">
-        <link rel="stylesheet" href="Design.css">
-        <title>Login</title>
-    </head>
-    <body>
-        <section class="Login" style="overflow: hidden;">
-            <section>
-                <img src="imgs/1.jpg" alt="">
-            </section>
-            <section style="text-align: center;">
-                <h1 style="font-size: 30px;">G.E.S.C.O.N</h1>
-                <h2>Login</h2>
-                <form action="POST">
-                    <label for="Login">Usuario</label><br>
-                    <input type="text" name="Login" id="Loginat" class="Loginat" required placeholder="Login" maxlength="15px"><br>
-                    <label for="Senha">Senha</label><br>
-                    <input type="password" name="Senha" id="Loginsen" class="Loginsen" required placeholder="Senha" maxlength="15px"><br><br>
-                    <a href="##"><input type="submit" name="Entrar" id="" value="Entrar" style="border-radius: 10px;"></a>
-                </form>
-            </section>
-        </section>
-    </body>
+  <head lang="pt-BR">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Login" />
+    <meta name="description" content="Apenas um site de login" />
+
+    <link rel="stylesheet" href="./css/form_login/primary.css" />
+    <link rel="stylesheet" href="./css/form_login/usuario.css" />
+
+    <link rel="stylesheet" href="./css/formulario-container.css" />
+    <link rel="stylesheet" href="./css/formulario-container/titulo.css" />
+
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/login/imagem.css" />
+
+    <link rel="stylesheet" href="Design.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <main class="login">
+      <section class="imagem__login">
+        <img src="imgs/1.jpg" alt="Imagem de um condomínio" />
+      </section>
+      <section class="formulario_container">
+        <h1 class="titulo__formulario_container">G.E.S.C.O.N</h1>
+        <h2>Login</h2>
+        <form action="#" class="form_login">
+          <label for="Login">Usuario</label><br />
+          <input type="text" name="Login" id="Loginat" required placeholder="Login" maxlength="15px" /><br />
+          <label for="Senha">Senha</label><br />
+          <input type="password" name="Senha" id="Loginsen" required placeholder="Senha" maxlength="15px" /><br /><br />
+          <a href="#"><input type="submit" name="Entrar" id="" value="Entrar" class="primary__form_login" /></a>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+
+input {
+  font-size: 22px;
+  background-color: lightgray;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+label {
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: darkgray;
+}
