@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="../assets/css/reset.css">
+
+  <link rel="stylesheet" href="../assets/css/pagina/layout-pagina.css">
+  <link rel="stylesheet" href="../assets/css/background/background-poligono.css">
+  
+  <link rel="stylesheet" href="../assets/css/container/container-cadastro-consulta.css">
+  <link rel="stylesheet" href="../assets/css/container/cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="../assets/css/container/cabecalho/cabecalho__titulo.css">
+  <link rel="stylesheet" href="../assets/css/container/cabecalho/cabecalho__subtitulo.css">
+  <link rel="stylesheet" href="../assets/css/container/cabecalho/cabecalho__tipo-form.css">
+  <link rel="stylesheet" href="../assets/css/form/layout-form.css">
+  <link rel="stylesheet" href="../assets/css/form/link-menu.css">
+  <link rel="stylesheet" href="../assets/css/form/input/input.css">
+  <link rel="stylesheet" href="../assets/css/form/input/submit-btn.css">
+
+  <link rel="stylesheet" href="../assets/css/resultado/container-resultado.css">
+  <link rel="stylesheet" href="../assets/css/resultado/resultado__titulo.css">
+  <link rel="stylesheet" href="../assets/css/resultado/resultado__info.css">
+
+  <link rel="stylesheet" href="../assets/css/auxiliar.css">
+  <link rel="stylesheet" href="../assets/css/media_queries.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta</title>
+</head>
+<body class="pagina">
+  <div class="container-consulta">
+    <!-- Cabecalho -->
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Administração</h1>
+      <h3 class="cabecalho__subtitulo">Oque vamos consultar?</h3>
+      <fieldset class="cabecalho__tipo-form">
+        <label for="pessoas" class="radio-label">
+          <input type="radio" name="tipo-consulta" id="pessoas"> Pessoas
+        </label>
+        <label for="alocacoes" class="radio-label">
+          <input type="radio" name="tipo-consulta" id="alocacoes"> Alocações
+        </label>
+        <label for="contas" class="radio-label">
+          <input type="radio" name="tipo-consulta" id="contas"> Contas
+        </label>
+      </fieldset>
+    </header>
+    
+    <!-- Consulta de Pessoas -->
+    <form action="#" class="form form-pessoas">
+      <fieldset>
+        <input type="number" id="idPessoa" class="form__input" placeholder="ID Pessoa" required>
+      </fieldset>
+      <button type="submit" class="form__submit-btn">Consultar</button>
+      <a href="../Menu/index.html" class="link-menu">Voltar ao menu</a>
+    </form>
+
+    <!-- Resultado Pessoas -->
+    <div class="container-resultado hidden" id="resultado-pessoas">
+      <header class="cabecalho">
+        <h2 class="cabecalho__titulo">Resultado </h2>
+      </header>
+      <div class="resultado">
+        <p class="info-label">
+          Nome: <span class="resultado__info" id="nome">Ciclano Ramos Pinto</span>
+        </p>
+        <p class="info-label">
+          CPF: <span class="resultado__info" id="cpf">999.999.999-88</span>
+        </p>
+        <p class="info-label">
+          Email: <span class="resultado__info" id="email">exemplo1projeto@gmail.com</span>
+        </p>
+        <p class="info-label">
+          Telefone: <span class="resultado__info" id="telefone">(21)98888-9898</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Consulta de Alocações -->
+    <form action="#" class="form form-alocacoes hidden">
+      <fieldset>
+        <input type="number" name="" id="idAloc" class="form__input" placeholder="ID Alocação" required>
+      </fieldset>
+      <button type="submit" class="form__submit-btn">Consultar</button>
+      <a href="../Menu/index.html" class="link-menu">Voltar ao menu</a>
+    </form>
+
+    <!-- Resultado Alocações -->
+    <div class="container-resultado hidden" id="resultado-alocacoes">
+      <header class="cabecalho">
+        <h2 class="cabecalho__titulo">Resultado </h2>
+      </header>
+      <div class="resultado">
+        <p class="info-label">
+          Proprietário: <span class="resultado__info" id="proprietario">Fulano da Silva Ribeiro</span>
+        </p>
+        <p class="info-label">
+          Bloco: <span class="resultado__info" id="bloco">99</span>
+        </p>
+        <p class="info-label">
+          Apartamento: <span class="resultado__info" id="apartamento">202</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Consulta de Contas -->
+    <form action="#" class="form form-contas hidden">
+      <fieldset>
+        <input type="number" name="" id="idAloc" class="form__input" placeholder="ID Apartamento" required>
+      </fieldset>
+      <button type="submit" class="form__submit-btn">Consultar</button>
+      <a href="../Menu/index.html" class="link-menu">Voltar ao menu</a>
+    </form>
+
+    <!-- Resultado Contas -->
+    <div class="container-resultado" id="resultado-contas">
+      <header class="cabecalho">
+        <h2 class="cabecalho__titulo">Resultado </h2>
+      </header>
+      <div class="resultado">
+        <p class="info-label">
+          Data: <span class="resultado__info" id="data">05/10/2023</span>
+        </p>
+        <p class="info-label">
+          Condominio: <span class="resultado__info" id="condominio">300,00</span>
+        </p>
+        <p class="info-label">
+          Fundo Reserva: <span class="resultado__info" id="fundo-reserva">0,00</span>
+        </p>
+        <p class="info-label">
+          Cedae: <span class="resultado__info" id="cedae">70,00</span>
+        </p>
+        <p class="info-label">
+          Light: <span class="resultado__info" id="light">85,00</span>
+        </p>
+        <p class="info-label">
+          Correção Monetária: <span class="resultado__info" id="correcao-monetaria">20,00</span>
+        </p>
+        <p class="info-label">
+          Cota Extra: <span class="resultado__info" id="cota-extra">50,00</span>
+        </p>
+        <p class="info-label">
+          Multa: <span class="resultado__info" id="multa">5,00</span>
+        </p>
+        <p class="info-label">
+          Juros: <span class="resultado__info" id="juros">7,80</span>
+        </p>
+        <p class="info-label">
+          Outros: <span class="resultado__info" id="outros">0,00</span>
+        </p>
+        <p class="info-label">
+          Total: <span class="resultado__info" id="total">vinte mil pratas</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

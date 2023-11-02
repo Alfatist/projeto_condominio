@@ -1,0 +1,10 @@
+.cabecalho__tipo-form {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.radio-label {
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
